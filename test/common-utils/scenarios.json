@@ -1,0 +1,20 @@
+{
+    "bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "common-utils": {}
+        }
+    },
+    "jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "common-utils": {}
+        }
+    },
+    "noble": {
+        "image": "mcr.microsoft.com/devcontainers/base:noble",
+        "features": {
+            "common-utils": {}
+        }
+    }
+}
