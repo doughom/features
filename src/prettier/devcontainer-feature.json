@@ -1,0 +1,15 @@
+{
+    "name": "prettier",
+    "id": "prettier",
+    "version": "1.0.0",
+    "description": "Install the prettier code formatter.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "type": "string"
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/node:1.6.1": {}
+    }
+}
