@@ -15,6 +15,7 @@ jobs:
         features:
           - common-utils
           - pre-commit
+          - prettier
         baseImage:
           - debian:latest
           - ubuntu:latest
