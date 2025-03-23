@@ -1,0 +1,20 @@
+{
+    "bookworm": {
+        "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+        "features": {
+            "pre-commit": {}
+        }
+    },
+    "jammy": {
+        "image": "mcr.microsoft.com/devcontainers/base:jammy",
+        "features": {
+            "pre-commit": {}
+        }
+    },
+    "noble": {
+        "image": "mcr.microsoft.com/devcontainers/base:noble",
+        "features": {
+            "pre-commit": {}
+        }
+    }
+}
