@@ -2,7 +2,7 @@
     "name": "pre-commit",
     "id": "pre-commit",
     "version": "1.0.0",
-    "description": "A framework for managing and maintaining multi-language pre-commit hooks.",
+    "description": "Install the pre-commit framework to manage pre-commit hooks.",
     "dependsOn": {
         "ghcr.io/devcontainers/features/python:1.7.0": {
             "toolsToInstall": "pipx"
