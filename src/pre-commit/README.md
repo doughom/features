@@ -1,7 +1,7 @@
 
 # pre-commit (pre-commit)
 
-A framework for managing and maintaining multi-language pre-commit hooks.
+Install the pre-commit framework to manage pre-commit hooks.
 
 ## Example Usage
 
@@ -13,6 +13,9 @@ A framework for managing and maintaining multi-language pre-commit hooks.
 
 
 
+## Additional Configuration
+
+Run `pre-commit install --install-hooks` with `postStartCommand` in your `devcontainer.json`.
 
 
 ---
