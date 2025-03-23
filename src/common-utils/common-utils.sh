@@ -20,7 +20,12 @@ get_github_asset_url() {
   local response
   local url
 
-  response=$(curl --show-error --silent "https://api.github.com/repos/$repo/releases/tags/$tag")
+  if [ "$tag" == "latest" ]; then
+    response=$(curl --retry 3 --max-time 30 --show-error --silent "https://api.github.com/repos/$repo/releases/latest")
+  else
+    response=$(curl --retry 3 --max-time 30 --show-error --silent "https://api.github.com/repos/$repo/releases/tags/$tag")
+  fi
+
   url=$(echo "$response" | jq --raw-output "$filter")
 
   if [ -n "$url" ]; then
@@ -37,7 +42,7 @@ download() {
 
   curl \
     --connect-timeout 5 --max-time 120 \
-    --retry 3 --retry-all-errors \
+    --retry 3 --retry-connrefused --retry-max-time 30 \
     --show-error --silent \
     --output "$dest" \
     --location "$src"

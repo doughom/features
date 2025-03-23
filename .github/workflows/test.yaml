@@ -17,8 +17,11 @@ jobs:
           - pre-commit
           - prettier
         baseImage:
-          - debian:latest
-          - ubuntu:latest
+          - debian:bullseye
+          - debian:bookworm
+          - ubuntu:focal
+          - ubuntu:jammy
+          - ubuntu:noble
           - mcr.microsoft.com/devcontainers/base:ubuntu
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
