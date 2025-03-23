@@ -5,7 +5,9 @@ install_debian_packages() {
   local packages="\
         ca-certificates \
         curl \
-        jq"
+        jq \
+        unzip \
+        xz-utils"
 
   # apt update takes a few seconds, so only run if packages are missing
   # shellcheck disable=SC2086
