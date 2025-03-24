@@ -1,0 +1,21 @@
+{
+    "name": "actionlint",
+    "id": "actionlint",
+    "version": "1.0.0",
+    "description": "Install actionlint from GitHub releases.",
+    "options": {
+        "tag": {
+            "default": "latest",
+            "type": "string",
+            "description": "Tag of the GitHub release to install."
+        },
+        "hash": {
+            "default": "none",
+            "type": "string",
+            "description": "Comma-separated list of SHA256 hashes of the release asset."
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/doughom/features/common-utils:1": {}
+    }
+}
