@@ -16,8 +16,20 @@
     },
     "features": {
         "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/doughom/features/actionlint:1": {
+            "version": "v1.7.7",
+            "hash": "023070a287cd8cccd71515fedc843f1985bf96c436b7effaecce67290e7e0757,401942f9c24ed71e4fe71b76c7d638f66d8633575c4016efd2977ce7c28317d0"
+        },
         "ghcr.io/doughom/features/pre-commit:1": {},
-        "ghcr.io/doughom/features/prettier:1": {}
+        "ghcr.io/doughom/features/prettier:1": {},
+        "ghcr.io/doughom/features/shellcheck:1": {
+            "version": "v0.10.0",
+            "hash": "324a7e89de8fa2aed0d0c28f3dab59cf84c6d74264022c00c22af665ed1a09bb,6c881ab0698e4e6ea235245f22832860544f17ba386442fe7e9d629f8cbedf87"
+        },
+        "ghcr.io/doughom/features/shfmt:1": {
+            "version": "v3.11.0",
+            "hash": "1904ec6bac715c1d05cd7f6612eec8f67a625c3749cb327e5bfb4127d09035ff,b3976121710fd4b12bf641b0a7fb2686da598fb0da9f148c641b61b54cfa3407"
+        }
     },
     "remoteUser": "node",
     "updateContentCommand": "npm install -g @devcontainers/cli"
