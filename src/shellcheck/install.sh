@@ -7,7 +7,7 @@ source /usr/local/bin/common-utils.sh
 url=$(get_github_asset_url koalaman/shellcheck "$TAG")
 download "$url" localFile
 
-if [[ "$HASH" !=  "none" ]]; then
+if [[ "$HASH" != "none" ]]; then
   test_file_hash localFile "$HASH"
 fi
 

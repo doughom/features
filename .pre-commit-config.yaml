@@ -24,3 +24,15 @@ repos:
     hooks:
       - id: conventional-pre-commit
         stages: [commit-msg]
+
+  - repo: https://github.com/rhysd/actionlint
+    rev: 03d0035246f3e81f36aed592ffb4bebf33a03106 # v1.7.7
+    hooks:
+      - id: actionlint-system
+
+  - repo: https://github.com/doughom/pre-commit-hooks
+    rev: v0.1.0
+    hooks:
+      - id: prettier
+      - id: shellcheck
+      - id: shfmt
