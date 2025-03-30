@@ -13,10 +13,14 @@ jobs:
     strategy:
       matrix:
         features:
+          - actionlint
           - common-utils
           - pre-commit
           - prettier
+          - shellcheck
+          - shfmt
         baseImage:
+          - almalinux:9-minimal
           - debian:bullseye
           - debian:bookworm
           - ubuntu:focal
