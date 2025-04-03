@@ -20,6 +20,7 @@ jobs:
           filters: |
             actionlint: ./**/actionlint/**
             common-utils: ./**/common-utils/**
+            hadolint: ./**/hadolint/**
             pre-commit: ./**/pre-commit/**
             prettier: ./**/prettier/**
             shellcheck: ./**/shellcheck/**

@@ -14,6 +14,7 @@ jobs:
         features:
           - actionlint
           - common-utils
+          - hadolint
           - pre-commit
           - prettier
           - shellcheck

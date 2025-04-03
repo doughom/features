@@ -20,6 +20,10 @@
             "version": "v1.7.7",
             "hash": "023070a287cd8cccd71515fedc843f1985bf96c436b7effaecce67290e7e0757,401942f9c24ed71e4fe71b76c7d638f66d8633575c4016efd2977ce7c28317d0"
         },
+        "ghcr.io/doughom/features/hadolint:1": {
+            "version": "v2.12.0",
+            "hash": "5798551bf19f33951881f15eb238f90aef023f11e7ec7e9f4c37961cb87c5df6,56de6d5e5ec427e17b74fa48d51271c7fc0d61244bf5c90e828aab8362d55010"
+        },
         "ghcr.io/doughom/features/pre-commit:1": {},
         "ghcr.io/doughom/features/prettier:1": {},
         "ghcr.io/doughom/features/shellcheck:1": {
