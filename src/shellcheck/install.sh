@@ -4,7 +4,7 @@ set -e
 
 source /usr/local/bin/common-utils.sh
 
-url=$(get_github_asset_url koalaman/shellcheck "$TAG")
+url=$(get_github_asset_url koalaman/shellcheck "$TAG" | grep 'tar.xz$')
 download "$url" localFile
 
 if [[ "$HASH" != "none" ]]; then

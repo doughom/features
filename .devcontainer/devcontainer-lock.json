@@ -1,0 +1,63 @@
+{
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:4": {
+            "version": "4.0.0",
+            "resolved": "ghcr.io/devcontainers/features/docker-in-docker@sha256:4fa87399214366e320d489991769c4f3f461e1ffe461f54eea78a41b34945bb5",
+            "integrity": "sha256:4fa87399214366e320d489991769c4f3f461e1ffe461f54eea78a41b34945bb5"
+        },
+        "ghcr.io/devcontainers/features/node:1.6.1": {
+            "version": "1.6.1",
+            "resolved": "ghcr.io/devcontainers/features/node@sha256:71590121aaf7b2040f3e1e2dfc4bb9a1389277fd5a88a7199094542b82ce5340",
+            "integrity": "sha256:71590121aaf7b2040f3e1e2dfc4bb9a1389277fd5a88a7199094542b82ce5340"
+        },
+        "ghcr.io/devcontainers/features/python:1.7.0": {
+            "version": "1.7.0",
+            "resolved": "ghcr.io/devcontainers/features/python@sha256:8452f39db0852420728c9f7503dd94b3fc71aa558b5e7c8f6f9ce6687e494ae3",
+            "integrity": "sha256:8452f39db0852420728c9f7503dd94b3fc71aa558b5e7c8f6f9ce6687e494ae3"
+        },
+        "ghcr.io/doughom/features/actionlint:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/actionlint@sha256:fd7bde6490b9468e7480efccdc8d2d10ed0f67cb574eafb5518f01e6f497dabb",
+            "integrity": "sha256:fd7bde6490b9468e7480efccdc8d2d10ed0f67cb574eafb5518f01e6f497dabb",
+            "dependsOn": ["ghcr.io/doughom/features/common-utils:1"]
+        },
+        "ghcr.io/doughom/features/common-utils:1": {
+            "version": "1.0.3",
+            "resolved": "ghcr.io/doughom/features/common-utils@sha256:8588e6cb573080504ae23b1985238ae1353c7d30517c18f2787fa08c8ab95c12",
+            "integrity": "sha256:8588e6cb573080504ae23b1985238ae1353c7d30517c18f2787fa08c8ab95c12"
+        },
+        "ghcr.io/doughom/features/hadolint:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/hadolint@sha256:d44fb81bd3f68bafbcff6132f7f5dbf64f8656e1cf94e77a0cb6b66c4df80563",
+            "integrity": "sha256:d44fb81bd3f68bafbcff6132f7f5dbf64f8656e1cf94e77a0cb6b66c4df80563",
+            "dependsOn": ["ghcr.io/doughom/features/common-utils:1"]
+        },
+        "ghcr.io/doughom/features/pre-commit:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/pre-commit@sha256:84f1b09cad3c1fddfb248488c4810675cde064caf5325a89bd75408be9c786e7",
+            "integrity": "sha256:84f1b09cad3c1fddfb248488c4810675cde064caf5325a89bd75408be9c786e7",
+            "dependsOn": ["ghcr.io/devcontainers/features/python:1.7.0"]
+        },
+        "ghcr.io/doughom/features/prettier:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/prettier@sha256:28db08709655bb2e70572002193765a500a312a7dd96c9865b871225435c476e",
+            "integrity": "sha256:28db08709655bb2e70572002193765a500a312a7dd96c9865b871225435c476e",
+            "dependsOn": ["ghcr.io/devcontainers/features/node:1.6.1"]
+        },
+        "ghcr.io/doughom/features/shellcheck:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/shellcheck@sha256:38a96c5d3b40677314847f5b212248a73e8cc4a7309bd27e25cb02052a3cde11",
+            "integrity": "sha256:38a96c5d3b40677314847f5b212248a73e8cc4a7309bd27e25cb02052a3cde11",
+            "dependsOn": [
+                "ghcr.io/devcontainers/features/node:1.6.1",
+                "ghcr.io/doughom/features/common-utils:1"
+            ]
+        },
+        "ghcr.io/doughom/features/shfmt:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/shfmt@sha256:cab6c02f74a9a1bbeecee976f70be946080c2edb6ad5237313fda7722b1c1a79",
+            "integrity": "sha256:cab6c02f74a9a1bbeecee976f70be946080c2edb6ad5237313fda7722b1c1a79",
+            "dependsOn": ["ghcr.io/doughom/features/common-utils:1"]
+        }
+    }
+}

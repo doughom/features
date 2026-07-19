@@ -16,7 +16,6 @@
         }
     },
     "dependsOn": {
-        "ghcr.io/devcontainers/features/node:1.6.1": {},
         "ghcr.io/doughom/features/common-utils:1": {}
     }
 }
