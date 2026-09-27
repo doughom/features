@@ -7,7 +7,7 @@ Reusable functions for features.
 
 ```json
 "features": {
-    "ghcr.io/doughom/features/common-utils:1": {}
+    "ghcr.io/doughom/features/common-utils:2": {}
 }
 ```
 

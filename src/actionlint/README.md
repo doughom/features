@@ -15,8 +15,7 @@ Install actionlint from GitHub releases.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| tag | Tag of the GitHub release to install. | string | latest |
-| hash | Comma-separated list of SHA256 hashes of the release asset. | string | none |
+| tag | Tag of the GitHub release to install. | string | v1.7.12 |
 
 
 
