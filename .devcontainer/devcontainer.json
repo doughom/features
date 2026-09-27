@@ -3,6 +3,10 @@
         "dockerfile": "Dockerfile"
     },
     "postStartCommand": "sudo chown -R vscode:vscode /workspaces; sudo /usr/local/share/docker-init.sh; npm install; pre-commit install --install-hooks",
+    "mounts": [
+        "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+        "source=${localWorkspaceFolderBasename}-containerd,target=/var/lib/containerd,type=volume"
+    ],
     "remoteEnv": {
         "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}"
     },
