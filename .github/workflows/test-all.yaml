@@ -24,12 +24,14 @@ jobs:
 
         baseImage:
           - almalinux:9-minimal
-          - debian:bullseye
+          - almalinux:10-minimal
           - debian:bookworm
-          - ubuntu:focal
+          - debian:trixie
+          - fedora:43
+          - fedora:44
           - ubuntu:jammy
           - ubuntu:noble
-          - mcr.microsoft.com/devcontainers/base:ubuntu
+          - ubuntu:resolute
 
     steps:
       - name: Checkout

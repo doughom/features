@@ -2,13 +2,13 @@
     "alma": {
         "image": "almalinux:10-minimal",
         "features": {
-            "common-utils": {}
+            "shfmt": {}
         }
     },
     "debian": {
         "image": "debian:trixie-slim",
         "features": {
-            "common-utils": {}
+            "shfmt": {}
         }
     }
 }
