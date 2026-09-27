@@ -38,25 +38,16 @@ get_github_asset_url() {
 
 download() {
   local src="$1"
-  local dest="$2"
 
   curl \
     --connect-timeout 5 --max-time 120 \
     --retry 3 --retry-connrefused --retry-max-time 30 \
     --show-error --silent \
-    --output "$dest" \
+    --remote-name \
+    --write-out "%{filename_effective}" \
     --location "$src"
 }
 
 test_file_hash() {
-  local filePath="$1"
-  local expectedHash="$2"
-
-  fileHash=$(sha256sum "$filePath" | awk '{print $1}')
-  if echo "$expectedHash" | grep -q "$fileHash"; then
-    echo "OK"
-  else
-    echo "ERROR: hash mismatch $fileHash"
-    return 1
-  fi
+  sha256sum --check --ignore-missing SHA256SUMS | sed -e "s/: OK$//g"
 }
