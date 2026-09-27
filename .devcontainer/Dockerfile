@@ -6,14 +6,15 @@ COPY sudoers /etc/sudoers.d/devcontainer
 
 ARG SNAPSHOT_DATE="20260920T000000Z"
 
-RUN apt-get install --yes --update --no-install-recommends ca-certificates=20250419 \
+# hadolint ignore=DL3008
+RUN apt-get install --yes --update --no-install-recommends ca-certificates \
     && apt-get upgrade --yes --snapshot "$SNAPSHOT_DATE" \
     && apt-get install --yes --update --snapshot "$SNAPSHOT_DATE" --no-install-recommends \
-        git=1:2.47.3-0+deb13u1 \
-        procps=2:4.0.4-9 \
-        python3=3.13.5-1 \
-        sudo=1.9.16p2-3+deb13u2 \
-        zsh=5.9-8+b24 \
+        git \
+        procps \
+        python3 \
+        sudo \
+        zsh \
     && useradd --create-home --shell /bin/zsh vscode
 
 USER vscode
