@@ -5,10 +5,8 @@ set -e
 source /usr/local/bin/common-utils.sh
 
 url=$(get_github_asset_url hadolint/hadolint "$TAG")
-download "$url" localFile
+filename=$(download "$url")
+mv "$filename" "$TAG-$filename"
+filename=$(test_file_hash)
 
-if [[ "$HASH" != "none" ]]; then
-  test_file_hash localFile "$HASH"
-fi
-
-install localFile /usr/local/bin/hadolint
+install "$filename" /usr/local/bin/hadolint
