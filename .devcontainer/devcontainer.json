@@ -1,6 +1,12 @@
 {
-    "image": "mcr.microsoft.com/devcontainers/javascript-node:24-bookworm",
-    "postStartCommand": "npm install; pre-commit install --install-hooks",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "postStartCommand": "sudo chown -R vscode:vscode /workspaces; sudo /usr/local/share/docker-init.sh; npm install; pre-commit install --install-hooks",
+    "mounts": [
+        "source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/node_modules,type=volume",
+        "source=${localWorkspaceFolderBasename}-containerd,target=/var/lib/containerd,type=volume"
+    ],
     "remoteEnv": {
         "PATH": "${containerWorkspaceFolder}/node_modules/.bin:${containerEnv:PATH}"
     },
@@ -18,7 +24,9 @@
         }
     },
     "features": {
-        "ghcr.io/devcontainers/features/docker-in-docker:4": {},
+        "ghcr.io/devcontainers/features/docker-in-docker:4": {
+            "moby": false
+        },
         "ghcr.io/doughom/features/actionlint:1": {
             "tag": "v1.7.7",
             "hash": "023070a287cd8cccd71515fedc843f1985bf96c436b7effaecce67290e7e0757,401942f9c24ed71e4fe71b76c7d638f66d8633575c4016efd2977ce7c28317d0"
@@ -38,5 +46,5 @@
             "hash": "1904ec6bac715c1d05cd7f6612eec8f67a625c3749cb327e5bfb4127d09035ff,b3976121710fd4b12bf641b0a7fb2686da598fb0da9f148c641b61b54cfa3407"
         }
     },
-    "remoteUser": "node"
+    "remoteUser": "vscode"
 }

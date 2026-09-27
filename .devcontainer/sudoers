@@ -1,0 +1,2 @@
+# sudo required for Docker and Dev Container CLI
+vscode ALL=(root) NOPASSWD: ALL

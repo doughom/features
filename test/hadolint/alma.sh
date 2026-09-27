@@ -3,5 +3,5 @@
 set -e
 
 source dev-container-features-test-lib
-check "version" pre-commit --version
+check "version" hadolint --version
 reportResults

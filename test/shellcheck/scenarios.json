@@ -2,13 +2,13 @@
     "alma": {
         "image": "almalinux:10-minimal",
         "features": {
-            "common-utils": {}
+            "shellcheck": {}
         }
     },
     "debian": {
         "image": "debian:trixie-slim",
         "features": {
-            "common-utils": {}
+            "shellcheck": {}
         }
     }
 }
