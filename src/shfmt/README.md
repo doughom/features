@@ -7,7 +7,7 @@ Install shfmt from GitHub releases.
 
 ```json
 "features": {
-    "ghcr.io/doughom/features/shfmt:1": {}
+    "ghcr.io/doughom/features/shfmt:3": {}
 }
 ```
 
@@ -15,8 +15,7 @@ Install shfmt from GitHub releases.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| tag | Tag of the GitHub release to install. | string | latest |
-| hash | Comma-separated list of SHA256 hashes of the release asset. | string | none |
+| tag | Tag of the GitHub release to install. | string | v3.14.1 |
 
 
 
