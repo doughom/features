@@ -1,21 +1,16 @@
 {
     "name": "ShellCheck",
     "id": "shellcheck",
-    "version": "1.0.0",
+    "version": "0.11.0",
     "description": "Install ShellCheck from GitHub releases.",
     "options": {
         "tag": {
-            "default": "latest",
+            "default": "v0.11.0",
             "type": "string",
             "description": "Tag of the GitHub release to install."
-        },
-        "hash": {
-            "default": "none",
-            "type": "string",
-            "description": "Comma-separated list of SHA256 hashes of the release asset."
         }
     },
     "dependsOn": {
-        "ghcr.io/doughom/features/common-utils:1": {}
+        "ghcr.io/doughom/features/common-utils:2": {}
     }
 }
