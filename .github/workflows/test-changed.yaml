@@ -39,7 +39,6 @@ jobs:
       matrix:
         features: ${{ fromJSON(needs.check.outputs.changed-features) }}
         baseImage:
-          - almalinux:9-minimal
           - almalinux:10-minimal
           - debian:bookworm
           - debian:trixie
