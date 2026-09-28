@@ -1,11 +1,18 @@
 {
     "name": "pre-commit",
     "id": "pre-commit",
-    "version": "1.0.0",
+    "version": "4.6.2",
     "description": "Install the pre-commit framework to manage pre-commit hooks.",
+    "options": {
+        "version": {
+            "default": "4.6.2",
+            "type": "string",
+            "description": "Version of pre-commit to install."
+        }
+    },
     "dependsOn": {
-        "ghcr.io/devcontainers/features/python:1.7.0": {
-            "toolsToInstall": "pipx"
+        "ghcr.io/devcontainers/features/python:1": {
+            "installTools": false
         }
     }
 }
