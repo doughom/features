@@ -7,11 +7,15 @@ Install the pre-commit framework to manage pre-commit hooks.
 
 ```json
 "features": {
-    "ghcr.io/doughom/features/pre-commit:1": {}
+    "ghcr.io/doughom/features/pre-commit:4": {}
 }
 ```
 
+## Options
 
+| Options Id | Description | Type | Default Value |
+|-----|-----|-----|-----|
+| version | Version of pre-commit to install. | string | 4.6.2 |
 
 ## Additional Configuration
 
