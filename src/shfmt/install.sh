@@ -5,10 +5,7 @@ set -e
 source /usr/local/bin/common-utils.sh
 
 url=$(get_github_asset_url mvdan/sh "$TAG")
-download "$url" localFile
+download "$url"
+filename=$(test_file_hash)
 
-if [[ "$HASH" != "none" ]]; then
-  test_file_hash localFile "$HASH"
-fi
-
-install localFile /usr/local/bin/shfmt
+install "$filename" /usr/local/bin/shfmt

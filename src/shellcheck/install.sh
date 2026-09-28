@@ -5,11 +5,8 @@ set -e
 source /usr/local/bin/common-utils.sh
 
 url=$(get_github_asset_url koalaman/shellcheck "$TAG" | grep 'tar.xz$')
-download "$url" localFile
+download "$url"
+filename=$(test_file_hash)
 
-if [[ "$HASH" != "none" ]]; then
-  test_file_hash localFile "$HASH"
-fi
-
-tar xf localFile
+tar xf "$filename"
 find . -type f -name shellcheck -exec install {} /usr/local/bin/shellcheck \;
