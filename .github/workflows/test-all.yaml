@@ -23,7 +23,6 @@ jobs:
           - shfmt
 
         baseImage:
-          - almalinux:9-minimal
           - almalinux:10-minimal
           - debian:bookworm
           - debian:trixie
