@@ -22,6 +22,8 @@ jobs:
             actionlint: ./**/actionlint/**
             common-utils: ./**/common-utils/**
             hadolint: ./**/hadolint/**
+            kubectl: ./**/kubectl/**
+            pip-tools: ./**/pip-tools/**
             pre-commit: ./**/pre-commit/**
             prettier: ./**/prettier/**
             shellcheck: ./**/shellcheck/**
@@ -40,8 +42,8 @@ jobs:
         features: ${{ fromJSON(needs.check.outputs.changed-features) }}
         baseImage:
           - almalinux:10-minimal
-          - debian:bookworm
-          - debian:trixie
+          - debian:bookworm-slim
+          - debian:trixie-slim
           - fedora:43
           - fedora:44
           - ubuntu:jammy

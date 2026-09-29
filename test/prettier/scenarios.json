@@ -1,8 +1,0 @@
-{
-    "debian": {
-        "image": "node:trixie-slim",
-        "features": {
-            "prettier": {}
-        }
-    }
-}

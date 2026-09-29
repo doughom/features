@@ -17,6 +17,8 @@ jobs:
           - actionlint
           - common-utils
           - hadolint
+          - kubectl
+          - pip-tools
           - pre-commit
           - prettier
           - shellcheck
@@ -24,8 +26,8 @@ jobs:
 
         baseImage:
           - almalinux:10-minimal
-          - debian:bookworm
-          - debian:trixie
+          - debian:bookworm-slim
+          - debian:trixie-slim
           - fedora:43
           - fedora:44
           - ubuntu:jammy
