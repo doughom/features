@@ -1,8 +1,0 @@
-{
-    "debian": {
-        "image": "python:slim-trixie",
-        "features": {
-            "pre-commit": {}
-        }
-    }
-}
