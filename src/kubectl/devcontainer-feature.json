@@ -1,7 +1,7 @@
 {
     "name": "kubectl",
     "id": "kubectl",
-    "version": "1.37",
+    "version": "1.37.0",
     "description": "Install kubectl using OS package manager.",
     "options": {
         "version": {
