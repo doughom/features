@@ -7,7 +7,7 @@ Install the prettier code formatter.
 
 ```json
 "features": {
-    "ghcr.io/doughom/features/prettier:1": {}
+    "ghcr.io/doughom/features/prettier:3": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Install the prettier code formatter.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | - | string | latest |
+| version | - | string | 3.9.9 |
 
 
 
