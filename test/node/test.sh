@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# shellcheck disable=SC1091
+set -e
+
+source dev-container-features-test-lib
+check "node version" node --version
+check "npm version" npm version | grep npm
+reportResults

@@ -1,0 +1,16 @@
+{
+    "name": "node",
+    "id": "node",
+    "version": "1.0.0",
+    "description": "Install Node.js",
+    "options": {
+        "version": {
+            "default": "24.21.0",
+            "type": "string",
+            "description": "Version of Node.js to install."
+        }
+    },
+    "dependsOn": {
+        "ghcr.io/doughom/features/common-utils:2": {}
+    }
+}
