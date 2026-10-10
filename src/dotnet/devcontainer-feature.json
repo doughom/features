@@ -1,0 +1,13 @@
+{
+    "name": "dotnet",
+    "id": "dotnet",
+    "version": "10.0",
+    "description": "Install .NET SDK",
+    "options": {
+        "version": {
+            "default": "10.0",
+            "type": "string",
+            "description": "Version to install."
+        }
+    }
+}
