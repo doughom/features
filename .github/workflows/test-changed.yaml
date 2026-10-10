@@ -21,6 +21,7 @@ jobs:
           filters: |
             actionlint: ./**/actionlint/**
             common-utils: ./**/common-utils/**
+            dotnet: ./**/dotnet/**
             hadolint: ./**/hadolint/**
             kubectl: ./**/kubectl/**
             pip-tools: ./**/pip-tools/**

@@ -16,6 +16,7 @@ jobs:
         features:
           - actionlint
           - common-utils
+          - dotnet
           - hadolint
           - kubectl
           - pip-tools
