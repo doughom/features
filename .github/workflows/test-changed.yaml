@@ -24,6 +24,7 @@ jobs:
             dotnet: ./**/dotnet/**
             hadolint: ./**/hadolint/**
             kubectl: ./**/kubectl/**
+            node: ./**/node/**
             pip-tools: ./**/pip-tools/**
             pre-commit: ./**/pre-commit/**
             prettier: ./**/prettier/**

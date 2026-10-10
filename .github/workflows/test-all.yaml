@@ -19,6 +19,7 @@ jobs:
           - dotnet
           - hadolint
           - kubectl
+          - node
           - pip-tools
           - pre-commit
           - prettier
