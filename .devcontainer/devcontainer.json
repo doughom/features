@@ -32,8 +32,8 @@
         "ghcr.io/doughom/features/node:1": {
             "version": "24.22.1"
         },
-        "ghcr.io/doughom/features/pre-commit:1": {},
-        "ghcr.io/doughom/features/prettier:1": {},
+        "ghcr.io/doughom/features/pre-commit:4.6.2": {},
+        "ghcr.io/doughom/features/prettier:3.9.9": {},
         "ghcr.io/doughom/features/shellcheck:0.11.0": {},
         "ghcr.io/doughom/features/shfmt:3.14.1": {}
     },
