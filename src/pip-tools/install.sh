@@ -10,16 +10,14 @@ source "$baseDir/bin/activate"
 pip install --require-hashes --requirement "requirements-$VERSION.txt"
 deactivate
 
-sitePackages=$(find "$baseDir" -type d -name site-packages)
-
 cat <<EOF >/usr/local/bin/pip-compile
 #!/usr/bin/env bash
-PYTHONPATH="$sitePackages" python3 -m piptools compile "\$@"
+"$baseDir/bin/python3" -m piptools compile "\$@"
 EOF
 
 cat <<EOF >/usr/local/bin/pip-sync
 #!/usr/bin/env bash
-PYTHONPATH="$sitePackages" python3 -m piptools sync "\$@"
+"$baseDir/bin/python3" -m piptools sync "\$@"
 EOF
 
 chmod +x /usr/local/bin/pip-compile /usr/local/bin/pip-sync
