@@ -1,11 +1,11 @@
 {
     "name": "pre-commit",
     "id": "pre-commit",
-    "version": "4.6.2",
+    "version": "4.7.0",
     "description": "Install the pre-commit framework to manage pre-commit hooks.",
     "options": {
         "version": {
-            "default": "4.6.2",
+            "default": "4.7.0",
             "type": "string",
             "description": "Version of pre-commit to install."
         }
