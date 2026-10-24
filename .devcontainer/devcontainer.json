@@ -29,6 +29,9 @@
         },
         "ghcr.io/doughom/features/actionlint:1.7.12": {},
         "ghcr.io/doughom/features/hadolint:2.15.1": {},
+        "ghcr.io/doughom/features/node:1": {
+            "version": "24.22.1"
+        },
         "ghcr.io/doughom/features/pre-commit:1": {},
         "ghcr.io/doughom/features/prettier:1": {},
         "ghcr.io/doughom/features/shellcheck:0.11.0": {},

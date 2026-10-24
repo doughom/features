@@ -1,20 +1,10 @@
-FROM node:24-trixie-slim@sha256:8ec5d7557396cfe32d21c3f9c13072355ceab22b584578ca4bb28af31120cffe
+# hadolint global ignore=DL3008,DL3066
 
-COPY apt.conf /etc/apt/apt.conf.d/devcontainer
-COPY zshrc /etc/skel/.zshrc
+FROM ghcr.io/doughom/devcontainer:26.10.24@sha256:d30478ee09a6d11221cbaff670f61507f405cdd607a87b7d4bfcc3fa8fbb2de7
+USER root
 COPY sudoers /etc/sudoers.d/devcontainer
+ARG SNAPSHOT_DATE="20261023T000000Z"
 
-ARG SNAPSHOT_DATE="20260920T000000Z"
-
-# hadolint ignore=DL3008
-RUN apt-get install --yes --update --no-install-recommends ca-certificates \
-    && apt-get upgrade --yes --snapshot "$SNAPSHOT_DATE" \
-    && apt-get install --yes --update --snapshot "$SNAPSHOT_DATE" --no-install-recommends \
-        git \
-        procps \
-        python3 \
-        sudo \
-        zsh \
-    && useradd --create-home --shell /bin/zsh vscode
+RUN apt-get install --yes --update --snapshot "$SNAPSHOT_DATE" --no-install-recommends procps
 
 USER vscode

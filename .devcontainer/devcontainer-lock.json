@@ -32,6 +32,12 @@
             "integrity": "sha256:48a690b8c20769a191a1ecce04915fe7a72a2155851b04d569bc211251388c16",
             "dependsOn": ["ghcr.io/doughom/features/common-utils:2"]
         },
+        "ghcr.io/doughom/features/node:1": {
+            "version": "1.0.0",
+            "resolved": "ghcr.io/doughom/features/node@sha256:a51d007d12f2b29d71615184df09e420e1e23ee0ea4ecc9280263348f76745bd",
+            "integrity": "sha256:a51d007d12f2b29d71615184df09e420e1e23ee0ea4ecc9280263348f76745bd",
+            "dependsOn": ["ghcr.io/doughom/features/common-utils:2"]
+        },
         "ghcr.io/doughom/features/pre-commit:1": {
             "version": "1.0.0",
             "resolved": "ghcr.io/doughom/features/pre-commit@sha256:84f1b09cad3c1fddfb248488c4810675cde064caf5325a89bd75408be9c786e7",
