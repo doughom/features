@@ -5,6 +5,6 @@ USER root
 COPY sudoers /etc/sudoers.d/devcontainer
 ARG SNAPSHOT_DATE="20261023T000000Z"
 
-RUN apt-get install --yes --update --snapshot "$SNAPSHOT_DATE" --no-install-recommends procps
+RUN apt-get install --yes --no-install-recommends --update --snapshot "$SNAPSHOT_DATE" procps
 
 USER vscode
