@@ -15,7 +15,7 @@ Install the pre-commit framework to manage pre-commit hooks.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of pre-commit to install. | string | 4.6.2 |
+| version | Version of pre-commit to install. | string | 4.7.0 |
 
 ## Additional Configuration
 
