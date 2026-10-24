@@ -3,6 +3,6 @@
         "@devcontainers/cli": "0.89.0"
     },
     "scripts": {
-        "test": "bash run_tests.sh"
+        "test": "bash scripts/test.sh"
     }
 }
