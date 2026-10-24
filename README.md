@@ -4,8 +4,8 @@
 
 ```shell
 # Test all features
-./test.sh all
+npm test
 
 # Test one feature
-./test.sh feature-name
+npm test -- feature-name
 ```

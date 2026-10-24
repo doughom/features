@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 set -eu
-feature="$1"
+feature="${1:-all}"
 
 images=(
   "almalinux:10-minimal"
