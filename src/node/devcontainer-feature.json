@@ -5,7 +5,7 @@
     "description": "Install Node.js",
     "options": {
         "version": {
-            "default": "24.21.0",
+            "default": "24.22.1",
             "type": "string",
             "description": "Version of Node.js to install."
         }
