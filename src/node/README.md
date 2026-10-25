@@ -15,7 +15,7 @@ Install Node.js
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Version of Node.js to install. | string | 24.21.0 |
+| version | Version of Node.js to install. | string | 24.22.1 |
 
 
 
