@@ -1,6 +1,6 @@
 {
     "devDependencies": {
-        "@devcontainers/cli": "0.89.0"
+        "@devcontainers/cli": "0.90.0"
     },
     "scripts": {
         "test": "bash scripts/test.sh"
